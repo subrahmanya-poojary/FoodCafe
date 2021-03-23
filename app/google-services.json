@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "279303911816",
+    "firebase_url": "https://subrahmanya-76246.firebaseio.com",
+    "project_id": "subrahmanya-76246",
+    "storage_bucket": "subrahmanya-76246.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279303911816:android:dcc542b6ebbc7b992ce23d",
+        "android_client_info": {
+          "package_name": "com.example.subrahmanya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279303911816-ivjhr3bt5odomf34etqtema3il0vvtqs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.subrahmanya",
+            "certificate_hash": "82c19262934304d705648d6e4dd66f56cd327132"
+          }
+        },
+        {
+          "client_id": "279303911816-mn4fcbguqcf2d9nuku421rqed8bc971e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIcrkyZaf8Q-E-du1wQLLuIu_J7JIa98Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279303911816-mn4fcbguqcf2d9nuku421rqed8bc971e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

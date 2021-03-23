@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left"
+        android:padding="8dp"
+        android:src="@drawable/menulist"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_marginLeft="80dp">
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="205dp"
+            android:layout_height="25dp"
+            android:fontFamily="@font/alegreya"
+            android:text="FOOD NAME"
+            android:textAlignment="textStart"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.213" />
+
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="205dp"
+            android:layout_height="25dp"
+            android:fontFamily="@font/alegreya"
+            android:text="RATE"
+            android:textAlignment="textStart"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.786" />
+
+        <RatingBar
+            android:id="@+id/coursetext"
+            style="@android:style/Widget.Material.Light.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:numStars="5"
+            android:stepSize="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/list"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.762"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/wishlist">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/opn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="right"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.531"
+            app:srcCompat="@drawable/clear" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

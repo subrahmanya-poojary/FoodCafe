@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    tools:context=".payment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00C42C2C">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_overlay" />
+
+            <RadioGroup
+                android:id="@+id/rgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:checkedButton="@id/radioButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.96">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:fontFamily="@font/alegreya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash On Delivary"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:fontFamily="@font/alegreya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UPI Payments"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:fontFamily="@font/alegreya"
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Credit/Debit Cards"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya"
+                android:text="Payment Options"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.122"
+                tools:text="Payment Options" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd3"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginRight="10dp"
+        android:animationCache="true"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.700">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00C42C2C">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_overlay" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout7"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.200"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.020">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameEt"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:autoLink="email"
+                    android:fontFamily="@font/alegreya"
+                    android:drawableLeft="@android:drawable/ic_dialog_email"
+                    android:ems="10"
+                    android:hint="Customer Name"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.200"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.220">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/noteEt"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:autoLink="email"
+                    android:fontFamily="@font/alegreya"
+                    android:drawableLeft="@android:drawable/ic_dialog_email"
+                    android:ems="10"
+                    android:hint="Food Item"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.200"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.420">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt2"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:autoLink="email"
+                    android:drawableLeft="@android:drawable/ic_dialog_email"
+                    android:ems="10"
+                    android:fontFamily="@font/alegreya"
+                    android:hint="Rate"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayou3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.200"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.620">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt3"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:autoLink="email"
+                    android:drawableLeft="@android:drawable/ic_dialog_email"
+                    android:ems="10"
+                    android:hint="Quantity"
+                    android:inputType="text"
+                    android:fontFamily="@font/alegreya"
+                    android:textColor="#000000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.200"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.820">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/amountEt"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:autoLink="email"
+                    android:drawableLeft="@android:drawable/ic_dialog_email"
+                    android:ems="10"
+                    android:hint="Payable Amount"
+                    android:fontFamily="@font/alegreya"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/upiIdEt"
+                android:layout_width="25dp"
+                android:layout_height="300dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="bclmaiya@okaxis"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.901"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.950" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/buttonshape"
+        android:text="PAY"
+        android:fontFamily="@font/alegreya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+</LinearLayout>

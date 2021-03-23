@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="352dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.020">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Items1"
+            android:onClick="DATE"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:autoLink="email"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:ems="10"
+            android:fontFamily="@font/alegreya"
+            android:hint="Select Delivary Date"
+            android:inputType="text"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="352dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.150">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Items2"
+            android:onClick="TIME"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:autoLink="email"
+            android:cursorVisible="true"
+            android:fontFamily="@font/alegreya"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:ems="10"
+            android:hint="Select Delivary Time"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="352dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.280">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Items3"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:autoLink="email"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:ems="10"
+            android:fontFamily="@font/alegreya"
+            android:hint="Enter No of Items"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:text="Enter Food Details"
+        android:background="@drawable/buttonshape"
+        android:textColor="@color/white"
+        android:fontFamily="@font/alegreya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.400" />
+
+
+</LinearLayout>

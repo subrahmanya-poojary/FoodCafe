@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".foodbook"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58">
+
+        <HorizontalScrollView
+            android:id="@+id/hscrll1"
+            android:paddingStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:id="@+id/table_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="30dp">
+
+                    <TableRow>
+
+
+                        <EditText
+
+                            android:id="@+id/I1"
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:enabled="false"
+                            android:text="Item Name"
+                            android:textAlignment="center">
+
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/I2"
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:enabled="false"
+                            android:text="Item Qty"
+                            android:textAlignment="center">
+
+                        </EditText>
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="150dp"
+                    android:fontFamily="@font/alegreya"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/table_main"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="Book Order"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/foodimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"
+
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alegreya"
+            android:text="Chapathi"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.150"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.150" />
+
+        <TextView
+            android:id="@+id/mrp"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alegreya"
+            android:text="₹50/-"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.864"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.150" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/alegreya"
+            android:text="Quantity"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.680" />
+
+        <Button
+            android:id="@+id/buttondec"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="90dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/remove"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.680" />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="95dp"
+            android:fontFamily="@font/alegreya"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.650" />
+
+        <Button
+            android:id="@+id/buttoninc"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="305dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.900"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.680" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="66dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/alegreya"
+            android:text="Total"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.200" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/alegreya"
+            android:text="₹50/-"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.824"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.200" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button1"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:onClick="feedback"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/alegreya"
+                    android:text="FEEDBACK">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/button2"
+
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:drawableRight="@drawable/buy"
+                    android:fontFamily="@font/alegreya"
+                    android:onClick="buy"
+                    android:text="BUY"
+                    android:textAlignment="center"
+                    android:textColorLink="#311B92"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.900"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.300" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
